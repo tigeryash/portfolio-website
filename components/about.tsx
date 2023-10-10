@@ -33,9 +33,9 @@ export default function About() {
         </p>
 
         <p>
-            <span className='italic'>When I'm not coding,</span> I enjoy playing video games, watching movies/tv shows, and 
+            <span className='italic'>When I&apos;m not coding,</span> I enjoy playing video games, watching movies/tv shows, and 
             exercising with gymnast rings. I like exploring new places when I get the opportunity 
-            to and listening to other peoples' experiences.
+            to and listening to other peoples&apos; experiences.
         </p>
     </motion.section>
   )
