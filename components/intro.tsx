@@ -110,7 +110,7 @@ export default function Intro() {
             </a>
 
             <a 
-                href='https://github.com/tigeryash'
+                href='https://www.linkedin.com/in/yashwanth-v-29a88392/'
                 target='_blank'
                 className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full
             outline-none focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15]
@@ -119,7 +119,7 @@ export default function Intro() {
             </a>
 
             <a
-                href=''
+                href='https://github.com/tigeryash'
                 target='_blank'
                 className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full 
             text-[1.35rem] outline-none focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15]

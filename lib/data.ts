@@ -2,9 +2,14 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import timetrackerImg from "@/public/time-tracker.png";
+import adviceImg from "@/public/advice-gen.png";
+import calculatorImg from "@/public/calc-png.png";
+import roomhomepageImg from "@/public/room-homepage.png";
+import agecalcImg from "@/public/age-calc.png";
+import todoImg from "@/public/todo-app.png";
+import iosweatherImg from "@/public/ios-weather-clone.png";
+import passcodeImg from "@/public/passcode.png";
 
 export const links = [
   {
@@ -29,54 +34,78 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
-  {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
-] as const;
-
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "iOS Weather Clone",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A clone of the iOS/iPadOS weather app. It shows the current weather and uses the OpenWeather API. Can be used to check the weather of any city in the world. Can save cities to local storage.",
+    tags: ["React", "Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
+    imageUrl: iosweatherImg,
+    webpageUrl: "https://yashappleweatherclone.vercel.app/",
+    githubUrl: "https://github.com/tigeryash/weather-app",
   },
   {
-    title: "rmtDev",
+    title: "Calculator",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Recreated a frontend mentor design challenge. It is a calculator that can perform basic operations. It has 3 themes and is responsive.",
+    tags: ["React", "Vite"],
+    imageUrl: calculatorImg,
+    webpageUrl: "https://tigeryash.github.io/calculator/",
+    githubUrl: "https://github.com/tigeryash/calculator",
   },
   {
-    title: "Word Analytics",
+    title: "Todo App",
+    description:
+      "A todo app design from frontendmentor which is funtional. Can add, delete and mark todos as complete. It uses Redux for state management. It has a dark mode and is responsive.",
+    tags: ["React", "Vite", "Redux", "TypeScript"],
+    imageUrl: todoImg,
+    webpageUrl: "https://tigeryash.github.io/todo-app/",
+    githubUrl: "https://github.com/tigeryash/todo-app",
+  },
+  {
+    title: "Room Homepage",
+    description:
+      "Another FrontEndMentor design I recreated. Practiced Grid and styling mobile first.",
+    tags: ["React", "Vite", "TypeScript"],
+    imageUrl: roomhomepageImg,
+    webpageUrl: "https://tigeryash.github.io/room-homepage/",
+    githubUrl: "https://github.com/tigeryash/room-homepage",
+  },
+  {
+    title: "Age Calculator",
+    description:
+      "Takes in a date and calculates the number of years, months and days since that date. It uses the dayjs library.",
+    tags: ["React"],
+    imageUrl: agecalcImg,
+    webpageUrl: "https://tigeryash.github.io/age-calc/",
+    githubUrl: "https://github.com/tigeryash/age-calc",
+  },
+  {
+    title: "Advice Generator",
+    description:
+      "Random Advice Generator using the Advice Slip JSON API. It uses the TanStack Query library for fetching data. Recreated from a FrontEndMentor design.",
+    tags: ["React", "Vite", "TypeScript", "TanStack Query"],
+    imageUrl: adviceImg,
+    webpageUrl: "https://tigeryash.github.io/advice-gen/",
+    githubUrl: "https://github.com/tigeryash/advice-gen",
+  },
+  {
+    title: "iOS Passcode Clone",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    tags: ["React", "Vite.", "TypeScript"],
+    imageUrl: passcodeImg,
+    webpageUrl: "https://tigeryash.github.io/passcode/",
+    githubUrl: "https://github.com/tigeryash/passcode",
+  },
+  {
+    title: "Time Tracker",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Vite", "TypeScript"],
+    imageUrl: timetrackerImg,
+    webpageUrl: "https://tigeryash.github.io/time-tracker/",
+    githubUrl: "https://github.com/tigeryash/time-tracker",
   },
 ] as const;
 

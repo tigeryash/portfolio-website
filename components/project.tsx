@@ -7,7 +7,7 @@ import {motion, useScroll, useTransform} from 'framer-motion'
 
 type ProjectProps = (typeof projectsData)[number]
 
-export default function Project({title, description, tags, imageUrl}:
+export default function Project({title, description, webpageUrl, tags, imageUrl}:
 ProjectProps) {
     const ref = useRef<HTMLDivElement>(null)
     const {scrollYProgress } = useScroll({
@@ -36,7 +36,9 @@ ProjectProps) {
                 <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col 
                     h-full sm:group-even:ml-[18rem] '>
                     <h3 className='text-2xl semibold'>
-                        {title}
+                        <a href={webpageUrl} target="_blank" rel="noopener noreferrer">
+                            {title}
+                        </a>
                     </h3>
                     <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>{description}</p>
                     <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
@@ -46,7 +48,6 @@ ProjectProps) {
                     ))}
                     </ul>
                 </div>
-                
                 
                 <Image 
                     src={imageUrl} 
