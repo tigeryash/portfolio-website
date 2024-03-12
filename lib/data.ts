@@ -1,7 +1,3 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import timetrackerImg from "@/public/time-tracker.png";
 import adviceImg from "@/public/advice-gen.png";
 import calculatorImg from "@/public/calc-png.png";
