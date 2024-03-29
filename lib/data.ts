@@ -115,4 +115,10 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "Framer Motion",
+  "Redux",
+  "Vite",
+  "Zustand",
+  "Context API",
+  "GSAP",
+  "SASS",
 ] as const;
