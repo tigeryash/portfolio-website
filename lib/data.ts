@@ -121,4 +121,7 @@ export const skillsData = [
   "Context API",
   "GSAP",
   "SASS",
+  "Zod",
+  "shadcn/ui",
+  "prisma",
 ] as const;
