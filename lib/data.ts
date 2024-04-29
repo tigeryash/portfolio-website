@@ -6,6 +6,8 @@ import agecalcImg from "@/public/age-calc.png";
 import todoImg from "@/public/todo-app.png";
 import iosweatherImg from "@/public/ios-weather-clone.png";
 import passcodeImg from "@/public/passcode.png";
+import chatgpt from "@/public/chatgpt.png";
+import petsoft from "@/public/petsoft.png";
 
 export const links = [
   {
@@ -32,10 +34,50 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "iOS Weather Clone",
+    title: "ChatGPT Clone",
     description:
-      "A clone of the iOS/iPadOS weather app. It shows the current weather and uses the OpenWeather API. Can be used to check the weather of any city in the world. Can save cities to local storage.",
-    tags: ["React", "Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
+      "Fully functional ChatGPT 3.5 app utlizing OpenAI' api. Users log in with a Google account and can save chats on Firebase.",
+    tags: [
+      "React",
+      "Nextjs 14",
+      "TypeScript",
+      "TailwindCSS",
+      "Firebase",
+      "Authjs V5",
+    ],
+    imageUrl: chatgpt,
+    webpageUrl: "https://chatgpt-messenger-five.vercel.app/",
+    githubUrl: "https://github.com/tigeryash/chatgpt-messenger/tree/master",
+  },
+  {
+    title: "PetSoft",
+    description:
+      "End of course project for Nextjs course. A an app that helps dog sitters keep track of client pets.",
+    tags: [
+      "React",
+      "Next.js 14",
+      "TypeScript",
+      "TailwindCSS",
+      "Stripe",
+      "ShadCn UI",
+      "Prisma",
+    ],
+    imageUrl: petsoft,
+    webpageUrl: "https://petsoft-project-seven.vercel.app/",
+    githubUrl: "https://github.com/tigeryash/petsoft-project",
+  },
+  {
+    title: "iOS Weather App",
+    description:
+      "A clone of the iOS/iPadOS weather app. Gets current weather from OpenWeather API. Works for every city in the world.",
+    tags: [
+      "React",
+      "Next.js",
+      "TailwindCSS",
+      "TypeScript",
+      "Framer Motion",
+      "TanStack",
+    ],
     imageUrl: iosweatherImg,
     webpageUrl: "https://yashappleweatherclone.vercel.app/",
     githubUrl: "https://github.com/tigeryash/weather-app",
@@ -120,7 +162,6 @@ export const skillsData = [
   "Zustand",
   "Context API",
   "GSAP",
-  "SASS",
   "Zod",
   "shadcn/ui",
   "prisma",

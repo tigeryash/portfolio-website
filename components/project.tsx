@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { FaGithubSquare } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,7 @@ export default function Project({
   webpageUrl,
   tags,
   imageUrl,
+  githubUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -40,16 +42,27 @@ export default function Project({
           className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col 
                     h-full sm:group-even:ml-[18rem] "
         >
-          <h3 className="text-2xl semibold">
+          <div className="flex justify-between">
+            <h3 className="text-2xl semibold">
+              <a
+                href={webpageUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                {title}
+              </a>
+            </h3>
             <a
-              href={webpageUrl}
+              href={githubUrl}
               target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
+              className=" flex items-center justify-center 
+            text-[1.35rem] outline-none focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15]
+            active:scale-105 transition  dark:text-white/60"
             >
-              {title}
+              <FaGithubSquare />
             </a>
-          </h3>
+          </div>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
