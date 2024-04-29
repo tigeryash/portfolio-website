@@ -8,6 +8,7 @@ import iosweatherImg from "@/public/ios-weather-clone.png";
 import passcodeImg from "@/public/passcode.png";
 import chatgpt from "@/public/chatgpt.png";
 import petsoft from "@/public/petsoft.png";
+import upperlower from "@/public/upperlower.png";
 
 export const links = [
   {
@@ -67,22 +68,6 @@ export const projectsData = [
     githubUrl: "https://github.com/tigeryash/petsoft-project",
   },
   {
-    title: "Upper/Lower",
-    description:
-      "I remade the functionality of the website higherlowergame. Which I made for someone on upwork.",
-    tags: [
-      "React",
-      "TailwindCSS",
-      "TypeScript",
-      "Framer Motion",
-      "Zustand",
-      "Vite",
-    ],
-    imageUrl: iosweatherImg,
-    webpageUrl: "https://tigeryash.github.io/upper-lower/",
-    githubUrl: "https://github.com/tigeryash/upper-lower",
-  },
-  {
     title: "iOS Weather App",
     description:
       "A clone of the iOS/iPadOS weather app. Gets current weather from OpenWeather API. Works for every city in the world.",
@@ -97,6 +82,22 @@ export const projectsData = [
     imageUrl: iosweatherImg,
     webpageUrl: "https://yashappleweatherclone.vercel.app/",
     githubUrl: "https://github.com/tigeryash/weather-app",
+  },
+  {
+    title: "Upper/Lower",
+    description:
+      "I remade the functionality of the website higherlowergame. Which I made for someone on upwork.",
+    tags: [
+      "React",
+      "TailwindCSS",
+      "TypeScript",
+      "Framer Motion",
+      "Zustand",
+      "Vite",
+    ],
+    imageUrl: upperlower,
+    webpageUrl: "https://tigeryash.github.io/upper-lower/",
+    githubUrl: "https://github.com/tigeryash/upper-lower",
   },
   {
     title: "Calculator",
