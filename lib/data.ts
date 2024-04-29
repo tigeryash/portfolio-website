@@ -52,7 +52,7 @@ export const projectsData = [
   {
     title: "PetSoft",
     description:
-      "End of course project for Nextjs course. A an app that helps dog sitters keep track of client pets.",
+      "End of course project for Nextjs course. An app that helps dog sitters keep track of client pets.",
     tags: [
       "React",
       "Next.js 14",
@@ -65,6 +65,22 @@ export const projectsData = [
     imageUrl: petsoft,
     webpageUrl: "https://petsoft-project-seven.vercel.app/",
     githubUrl: "https://github.com/tigeryash/petsoft-project",
+  },
+  {
+    title: "Upper/Lower",
+    description:
+      "I remade the functionality of the website higherlowergame. Which I made for someone on upwork.",
+    tags: [
+      "React",
+      "TailwindCSS",
+      "TypeScript",
+      "Framer Motion",
+      "Zustand",
+      "Vite",
+    ],
+    imageUrl: iosweatherImg,
+    webpageUrl: "https://tigeryash.github.io/upper-lower/",
+    githubUrl: "https://github.com/tigeryash/upper-lower",
   },
   {
     title: "iOS Weather App",
