@@ -93,7 +93,7 @@ export default function Intro() {
         </Link>
 
         <a
-          href="/YashwanthVenkatesan.pdf"
+          href="/YashwanthVenkatesanResume.pdf"
           download={true}
           className="group bg-white py-3 px-7 flex items-center gap-2 
                 rounded-full outline-none focus:scale-110 hover:scale-110 

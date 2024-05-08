@@ -9,6 +9,7 @@ import passcodeImg from "@/public/passcode.png";
 import chatgpt from "@/public/chatgpt.png";
 import petsoft from "@/public/petsoft.png";
 import upperlower from "@/public/upperlower.png";
+import construction from "@/public/construction.png";
 
 export const links = [
   {
@@ -49,6 +50,15 @@ export const projectsData = [
     imageUrl: chatgpt,
     webpageUrl: "https://chatgpt-messenger-five.vercel.app/",
     githubUrl: "https://github.com/tigeryash/chatgpt-messenger/tree/master",
+  },
+  {
+    title: "Landing Page",
+    description:
+      "I took a design from dribbble and made it into a real website. Using the latest frontend technologies.",
+    tags: ["Next.js 14", "TypeScript", "ShadCn UI", "Zod", "Framer Motion"],
+    imageUrl: construction,
+    webpageUrl: "https://christian-construction.vercel.app/",
+    githubUrl: "https://github.com/tigeryash/christian-construction",
   },
   {
     title: "PetSoft",
