@@ -182,7 +182,7 @@ export const skillsData = [
   "React",
   "Next.js",
   "Git",
-  "Tailwind",
+  "TailwindCSS",
   "Framer Motion",
   "Redux",
   "Vite",
@@ -192,4 +192,8 @@ export const skillsData = [
   "Zod",
   "shadcn/ui",
   "prisma",
+  "Firebase",
+  "Authjs V5",
+  "TanStack Query",
+  "Three.js",
 ] as const;
