@@ -20,7 +20,7 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
 
       <p className="mb-3">
-        Hi, I`&apos;`m Yashwanth! I`&apos;`m a{" "}
+        Hi, I&apos;m Yashwanth! I&apos;m a{" "}
         <span className="font-medium">Full Stack Developer</span> passionate
         about creating engaging and efficient web applications using modern
         technologies like{" "}
@@ -41,7 +41,7 @@ export default function About() {
         I especially enjoy crafting intuitive and{" "}
         <span className="font-medium">responsive user interfaces</span> that
         work beautifully across devices. My experience extends beyond
-        traditional websites; I`&apos;`ve developed custom React components for
+        traditional websites; I&apos;ve developed custom React components for
         unique interactive environments, like contributing to a community{" "}
         <span className="italic">RAGE MP GTA 5 server</span>, and explored
         mobile app development using{" "}
@@ -54,7 +54,7 @@ export default function About() {
         product.
       </p>
       <p className="mb-3">
-        I`&apos;`m a quick learner, always excited by the potential of new tools
+        I&apos;m a quick learner, always excited by the potential of new tools
         and frameworks, and currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a{" "}
         <span className="font-medium">Full Stack Developer</span> where I can

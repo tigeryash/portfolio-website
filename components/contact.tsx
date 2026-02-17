@@ -48,14 +48,14 @@ export default function Contact() {
           required
           maxLength={500}
           className="h-14 rounded-lg borderBlack px-4 dark:focus:bg-opacity-100 transition-all dark:bg-opacity-80
-                    dark:outline-none"
+                    dark:outline-none dark:text-white"
           placeholder="Your Email"
         />
         <textarea
           name="message"
           required
           maxLength={5000}
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:text-white"
           placeholder="Your Message"
         />
         <SubmitBtn />
