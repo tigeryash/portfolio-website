@@ -1,22 +1,17 @@
-import timetrackerImg from "@/public/time-tracker.png";
 import adviceImg from "@/public/advice-gen.png";
-import calculatorImg from "@/public/calc-png.png";
-import roomhomepageImg from "@/public/room-homepage.png";
-import agecalcImg from "@/public/age-calc.png";
 import todoImg from "@/public/todo-app.png";
 import iosweatherImg from "@/public/ios-weather-clone.png";
-import passcodeImg from "@/public/passcode.png";
-import chatgpt from "@/public/chatgpt.png";
+import chatgpt from "@/public/chatgpt.webp";
 import petsoft from "@/public/petsoft.png";
-import upperlower from "@/public/upperlower.png";
-import marble from "@/public/marble.png";
-import solarite from "@/public/solarite.png";
-import awwwards from "@/public/awwwards.png";
-import portal from "@/public/portal.png";
+import marble from "@/public/marble.webp";
+import solarite from "@/public/solarite.webp";
+import awwwards from "@/public/awwwards.webp";
+import portal from "@/public/portal.webp";
 import construction from "@/public/construction.png";
-import yashdex from "@/public/yashdex.png";
-import spotlight from "@/public/spotlight.png";
+import yashdex from "@/public/yashdex.webp";
+import spotlight from "@/public/spotlight.webp";
 import expomovie from "@/public/movie-expo.png";
+import gourd from "@/public/3d-gourd.webp";
 
 export const links = [
   {
@@ -42,6 +37,15 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+   {
+    title: "Solarite",
+    description:
+      "Collaborated in a Chingu Voyage and developed a fullstack app for solar panel installation company. With Admin and Client dashboard.",
+    tags: ["GSAP", "Lenis", "Threejs", "React", "TypeScript"],
+    imageUrl: gourd,
+    webpageUrl: "https://sofi-health.vercel.app/",
+    githubUrl: "https://github.com/tigeryash/sofi-health",
+  },
   {
     title: "Solarite",
     description:
@@ -106,16 +110,15 @@ export const projectsData = [
     githubUrl: "https://github.com/tigeryash/awwwards-jsm",
   },
   {
-    title: "ChatGPT Clone",
+    title: "Multi AI Chat",
     description:
       "Fully functional ChatGPT 3.5 app utlizing OpenAI' api. Users log in with a Google account and can save chats on Firebase.",
     tags: [
-      "React",
-      "Nextjs 14",
+      "AI SDK",
+      "TanStack Start",
       "TypeScript",
-      "TailwindCSS",
-      "Firebase",
-      "Authjs V5",
+      "Convex",
+      "Better Auth",
     ],
     imageUrl: chatgpt,
     webpageUrl: "https://chatgpt-messenger-five.vercel.app/",
@@ -164,31 +167,6 @@ export const projectsData = [
     githubUrl: "https://github.com/tigeryash/weather-app",
   },
   {
-    title: "Upper/Lower",
-    description:
-      "I remade the functionality of the website higherlowergame. Which I made for someone on upwork.",
-    tags: [
-      "React",
-      "TailwindCSS",
-      "TypeScript",
-      "Framer Motion",
-      "Zustand",
-      "Vite",
-    ],
-    imageUrl: upperlower,
-    webpageUrl: "https://tigeryash.github.io/upper-lower/",
-    githubUrl: "https://github.com/tigeryash/upper-lower",
-  },
-  {
-    title: "Calculator",
-    description:
-      "Recreated a frontend mentor design challenge. It is a calculator that can perform basic operations. It has 3 themes and is responsive.",
-    tags: ["React", "Vite"],
-    imageUrl: calculatorImg,
-    webpageUrl: "https://tigeryash.github.io/calculator/",
-    githubUrl: "https://github.com/tigeryash/calculator",
-  },
-  {
     title: "Todo App",
     description:
       "A todo app design from frontendmentor which is funtional. Can add, delete and mark todos as complete. It uses Redux for state management. It has a dark mode and is responsive.",
@@ -196,24 +174,6 @@ export const projectsData = [
     imageUrl: todoImg,
     webpageUrl: "https://tigeryash.github.io/todo-app/",
     githubUrl: "https://github.com/tigeryash/todo-app",
-  },
-  {
-    title: "Room Homepage",
-    description:
-      "Another FrontEndMentor design I recreated. Practiced Grid and styling mobile first.",
-    tags: ["React", "Vite", "TypeScript"],
-    imageUrl: roomhomepageImg,
-    webpageUrl: "https://tigeryash.github.io/room-homepage/",
-    githubUrl: "https://github.com/tigeryash/room-homepage",
-  },
-  {
-    title: "Age Calculator",
-    description:
-      "Takes in a date and calculates the number of years, months and days since that date. It uses the dayjs library.",
-    tags: ["React"],
-    imageUrl: agecalcImg,
-    webpageUrl: "https://tigeryash.github.io/age-calc/",
-    githubUrl: "https://github.com/tigeryash/age-calc",
   },
   {
     title: "Advice Generator",
@@ -224,24 +184,7 @@ export const projectsData = [
     webpageUrl: "https://tigeryash.github.io/advice-gen/",
     githubUrl: "https://github.com/tigeryash/advice-gen",
   },
-  {
-    title: "iOS Passcode Clone",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Vite.", "TypeScript"],
-    imageUrl: passcodeImg,
-    webpageUrl: "https://tigeryash.github.io/passcode/",
-    githubUrl: "https://github.com/tigeryash/passcode",
-  },
-  {
-    title: "Time Tracker",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Vite", "TypeScript"],
-    imageUrl: timetrackerImg,
-    webpageUrl: "https://tigeryash.github.io/time-tracker/",
-    githubUrl: "https://github.com/tigeryash/time-tracker",
-  },
+
 ] as const;
 
 export const skillsData = [

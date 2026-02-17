@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: "cdn.donmai.us",
       },
     ],
+    qualities: [75, 85, 95, 100],
   },
 };
 
