@@ -22,20 +22,20 @@ export default function Project({
   });
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const opacityProgress = useTransform(scaleProgress, [0, 1], [0.6, 1]);
 
   return (
     <motion.div
       ref={ref}
       style={{
-        scale: scrollYProgress,
+        scale: scaleProgress,
         opacity: opacityProgress,
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <motion.section
-        className=" bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden
-                sm:pr-8 relative sm:h-[20rem] sm:group-even:pl-8 hover:bg-gray-200 transition rounded-lg
+        className=" bg-gray-200 max-w-[42rem] border border-black/5 overflow-hidden
+                sm:pr-8 relative sm:h-[20rem] sm:group-even:pl-8 hover:bg-gray-400 transition rounded-lg
                 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
       >
         <div
@@ -69,7 +69,7 @@ export default function Project({
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, idx) => (
               <li
-                className="bg-black/[.7] px-3 py-1 text-[.7rem] uppercase tracking-wider text-white
+                className="bg-black px-3 py-1 text-[.7rem] uppercase tracking-wider text-white
                         rounded-full dark:text-white/70"
                 key={idx}
               >
@@ -82,12 +82,11 @@ export default function Project({
         <a href={webpageUrl} target="_blank" rel="noopener noreferrer">
           <Image
             src={imageUrl}
-            alt="project I worked on"
+            alt={title + " screenshot"}
             quality={95}
             className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
                     group-even:right-[initial] group-even:-left-40  group-hover:-translate-x-3 
                     group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] transition
-                    
                     group-even:group-hover:translate-x-3 
                     group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2"
           />
