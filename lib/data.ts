@@ -1,17 +1,19 @@
-import adviceImg from "@/public/advice-gen.png";
-import todoImg from "@/public/todo-app.png";
-import iosweatherImg from "@/public/ios-weather-clone.png";
-import chatgpt from "@/public/chatgpt.webp";
-import petsoft from "@/public/petsoft.png";
+
+import iosweatherImg from "@/public/ios-weather-clone.webp";
+import aichat from "@/public/ai-chat.webp";
+import petsoft from "@/public/petsoft.webp";
 import marble from "@/public/marble.webp";
 import solarite from "@/public/solarite.webp";
 import awwwards from "@/public/awwwards.webp";
 import portal from "@/public/portal.webp";
-import construction from "@/public/construction.png";
+import construction from "@/public/construction.webp";
 import yashdex from "@/public/yashdex.webp";
 import spotlight from "@/public/spotlight.webp";
-import expomovie from "@/public/movie-expo.png";
+import expomovie from "@/public/movie-expo.webp";
 import gourd from "@/public/3d-gourd.webp";
+import voxel from "@/public/voxel-portfolio.webp";
+import shader from "@/public/shader-journey.webp";
+import pantry from "@/public/pantry.webp";
 
 export const links = [
   {
@@ -37,10 +39,51 @@ export const links = [
 ] as const;
 
 export const projectsData = [
-   {
-    title: "Solarite",
+  {
+    title: "High Elo LLMs",
     description:
-      "Collaborated in a Chingu Voyage and developed a fullstack app for solar panel installation company. With Admin and Client dashboard.",
+      "Multi Chat window app that allows users to chat with multiple LLMs at once. It uses the AI SDK and Better Auth for authentication.",
+    tags: [
+      "AI SDK",
+      "TanStack Start",
+      "TypeScript",
+      "Convex",
+      "Better Auth",
+    ],
+    imageUrl: aichat,
+    webpageUrl: "https://ai-chat-tanstack.vercel.app/",
+    githubUrl: "https://github.com/tigeryash/ai-chat-tanstack",
+  },{
+    title: "Voxel Park Portfolio",
+    description:
+      "Park I modeled in Blender with billboards containing my projects. Move around with Frieren.",
+    tags: [ "TypeScript", "Blender", "Rapier", "R3F", "Drei"],
+    imageUrl: voxel,
+    webpageUrl: "https://voxel-portfolio-tan.vercel.app/",
+    githubUrl: "https://github.com/tigeryash/voxel-portfolio/tree/main",
+  },
+  {
+    title: "Shader Journey",
+    description:
+      "A collection of shader experiments created with Threejs and React Three Fiber. Each shader is a unique visual effect that can be used in web projects.",
+    tags: ["GSAP", "Threejs", "TypeScript", "GLSL", "TSL"],
+    imageUrl: shader,
+    webpageUrl: "https://shader-journey-smoky.vercel.app/",
+    githubUrl: "https://github.com/tigeryash/shader-journey",
+  },
+{
+    title: "Pantry Tracker",
+    description:
+      "A fullstack app for tracking pantry items. Users can add items to their pantry, track expiration dates, and get notifications when items are about to expire.",
+    tags: ["React Native", "Expo", "Uniwind", "TypeScript"],
+    imageUrl: pantry,
+    webpageUrl: "https://sofi-health.vercel.app/",
+    githubUrl: "https://github.com/tigeryash/pantry-tracker",
+  },
+   {
+    title: "Scroll Based Animation",
+    description:
+      "A project demonstrating scroll-based animations using GSAP and Lenis.",
     tags: ["GSAP", "Lenis", "Threejs", "React", "TypeScript"],
     imageUrl: gourd,
     webpageUrl: "https://sofi-health.vercel.app/",
@@ -94,7 +137,7 @@ export const projectsData = [
   {
     title: "Yashdex",
     description:
-      "Pokedex app with AI assitant to help identify Pokemon within images.",
+      "Pokedex app with AI assitant to help identify Pokemon within images. Pulling data from the PokeAPI.",
     tags: ["Nextjs", "AI SDK", "TypeScript", "React Webcam", "Zustand"],
     imageUrl: yashdex,
     webpageUrl: "https://yashdex.vercel.app/",
@@ -108,21 +151,6 @@ export const projectsData = [
     imageUrl: awwwards,
     webpageUrl: "https://awwwards-jsm-nu.vercel.app/",
     githubUrl: "https://github.com/tigeryash/awwwards-jsm",
-  },
-  {
-    title: "Multi AI Chat",
-    description:
-      "Fully functional ChatGPT 3.5 app utlizing OpenAI' api. Users log in with a Google account and can save chats on Firebase.",
-    tags: [
-      "AI SDK",
-      "TanStack Start",
-      "TypeScript",
-      "Convex",
-      "Better Auth",
-    ],
-    imageUrl: chatgpt,
-    webpageUrl: "https://chatgpt-messenger-five.vercel.app/",
-    githubUrl: "https://github.com/tigeryash/chatgpt-messenger/tree/master",
   },
   {
     title: "Landing Page",
@@ -166,58 +194,37 @@ export const projectsData = [
     webpageUrl: "https://yashappleweatherclone.vercel.app/",
     githubUrl: "https://github.com/tigeryash/weather-app",
   },
-  {
-    title: "Todo App",
-    description:
-      "A todo app design from frontendmentor which is funtional. Can add, delete and mark todos as complete. It uses Redux for state management. It has a dark mode and is responsive.",
-    tags: ["React", "Vite", "Redux", "TypeScript"],
-    imageUrl: todoImg,
-    webpageUrl: "https://tigeryash.github.io/todo-app/",
-    githubUrl: "https://github.com/tigeryash/todo-app",
-  },
-  {
-    title: "Advice Generator",
-    description:
-      "Random Advice Generator using the Advice Slip JSON API. It uses the TanStack Query library for fetching data. Recreated from a FrontEndMentor design.",
-    tags: ["React", "Vite", "TypeScript", "TanStack Query"],
-    imageUrl: adviceImg,
-    webpageUrl: "https://tigeryash.github.io/advice-gen/",
-    githubUrl: "https://github.com/tigeryash/advice-gen",
-  },
+ 
 
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Git",
-  "TailwindCSS",
-  "Framer Motion",
-  "Redux",
-  "Vite",
-  "Zustand",
-  "Context API",
-  "GSAP",
-  "Zod",
-  "shadcn/ui",
-  "Prisma",
-  "React Router",
-  "AI SDK",
-  "Convex",
-  "Clerk",
-  "Firebase",
-  "Authjs V5",
-  "TanStack Query",
-  "Three.js",
-  "React Three Fiber",
-  "GLSL",
-  "Rapier",
-  "Blender",
-  "Expo",
-  "React Native",
-  "Drei",
+  {
+    section: "Frontend",
+    skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React","TanStack Start", "Next.js", "React Router", "Vite"],
+  },
+  {
+    section: "Styling & Animation",
+    skills: ["TailwindCSS", "shadcn/ui", "Framer Motion", "GSAP"],
+  },
+  {
+    section: "State Management",
+    skills: ["Redux", "Zustand", "Context API"],
+  },
+  {
+    section: "Backend & Data",
+    skills: ["Prisma", "Convex", "Firebase", "TanStack Query", "Zod"],
+  },
+  {
+    section: "3D",
+    skills: ["Three.js", "React Three Fiber", "Drei", "GLSL", "Rapier", "Blender", "TSL"],
+  },
+  {
+    section: "Mobile",
+    skills: ["React Native", "Expo"],
+  },
+  {
+    section: "Auth & AI",
+    skills: ["Better Auth","Clerk", "Authjs V5", "AI SDK"],
+  },
 ] as const;

@@ -3,5 +3,5 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .borderBlack{
-    @apply border border-black/10;
+    @apply border border-black/10 dark:border-white;
 }

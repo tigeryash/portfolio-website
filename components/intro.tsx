@@ -66,7 +66,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I&apos;m Yash.</span> I&apos;m a{" "}
         <span className="font-bold">fullstack developer</span> with{" "}
-        <span className="font-bold">5 years</span> of experience. I enjoy
+        <span className="font-bold">4+ years</span> of experience. I enjoy
         building <span className="italic">websites</span>. My focus is{" "}
         <span className="underline">React</span>
       </motion.h1>
@@ -88,7 +88,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me header{" "}
+          Contact me{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -108,7 +108,8 @@ export default function Intro() {
           target="_blank"
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full
             outline-none focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15]
-            active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
+            active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60
+            dark:hover:text-white dark:hover:bg-gray-950"
         >
           <BsLinkedin />
         </a>
@@ -118,7 +119,8 @@ export default function Intro() {
           target="_blank"
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full 
             text-[1.35rem] outline-none focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15]
-            active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
+            active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60
+            dark:hover:text-white dark:hover:bg-gray-950"
         >
           <FaGithubSquare />
         </a>
