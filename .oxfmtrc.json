@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "sortTailwindcss": {
+    "stylesheet": "./app/globals.css",
+    "functions": ["clsx"]
+  },
+  "ignorePatterns": [".next/**", "out/**", "build/**", "bun.lock", "public/**", "next-env.d.ts"]
+}

@@ -2,6 +2,12 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-.borderBlack{
-    @apply border border-black/10 dark:border-white;
+.borderBlack {
+  @apply border border-black/10 dark:border-white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

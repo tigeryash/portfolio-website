@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react", "nextjs", "jsx-a11y", "import", "unicorn"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "categories": {
+    // Includes the React Compiler rules (e.g. no setState inside effects, pure renders).
+    "correctness": "error",
+    "suspicious": "warn"
+  },
+  "rules": {
+    // Not needed with the automatic JSX runtime (React 17+).
+    "react/react-in-jsx-scope": "off",
+    "import/no-unassigned-import": ["warn", { "allow": ["**/*.css"] }]
+  },
+  "settings": {
+    "jsx-a11y": {
+      "components": {
+        "Link": "a"
+      }
+    }
+  },
+  "ignorePatterns": [".next/**", "out/**", "build/**", "next-env.d.ts"]
+}

@@ -16,10 +16,7 @@ type ContactFormEmailProps = {
   senderEmail: string;
 };
 
-export default function ContactFormEmail({
-  message,
-  senderEmail,
-}: ContactFormEmailProps) {
+export default function ContactFormEmail({ message, senderEmail }: ContactFormEmailProps) {
   return (
     <Html>
       <Head />
@@ -27,9 +24,9 @@ export default function ContactFormEmail({
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
-            <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
+            <Section className="my-10 rounded-md border border-solid border-black/10 bg-white px-10 py-4">
               <Heading className="leading-tight">
-                YOu received the following message from the contact form
+                You received the following message from the contact form
               </Heading>
               <Text>{message}</Text>
               <Hr />

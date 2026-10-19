@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useEffect } from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
@@ -10,13 +9,11 @@ export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.1);
 
   return (
-    <section id="projects" ref={ref} className="scroll-mt-28 mb-28">
+    <section id="projects" ref={ref} className="mb-28 scroll-mt-28">
       <SectionHeading>My Projects</SectionHeading>
-      <div className="grid grid-cols-1 gap-8 xl:grid-cols-2 ">
-        {projectsData.map((project, idx) => (
-          <React.Fragment key={idx}>
-            <Project {...project} />
-          </React.Fragment>
+      <div className="grid grid-cols-1 gap-8 xl:grid-cols-2">
+        {projectsData.map((project) => (
+          <Project key={project.title} {...project} />
         ))}
       </div>
     </section>
