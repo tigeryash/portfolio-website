@@ -9,6 +9,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { siteConfig } from "@/lib/site";
+import profileImg from "@/public/profile.webp";
 
 const iconButtonClass = `bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full
   outline-none focus-visible:scale-110 hover:text-gray-950 hover:scale-110
@@ -32,17 +33,17 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://cdn.donmai.us/sample/1c/4b/__uzumaki_naruto_naruto_and_1_more_drawn_by_sssiii7610__sample-1c4b993253febe9832dff83f7908e42e.jpg"
+              src={profileImg}
               alt={`Portrait of ${siteConfig.name}`}
-              width={192}
-              height={192}
+              sizes="(min-width: 640px) 10rem, 8rem"
+              placeholder="blur"
               preload
-              className="h-24 w-24 rounded-full border-[.35rem] border-white object-cover shadow-xl"
+              className="h-32 w-32 rounded-full border-[.35rem] border-white object-cover shadow-xl sm:h-40 sm:w-40 dark:border-white/80"
             />
           </motion.div>
 
           <motion.span
-            className="absolute right-0 bottom-0 text-4xl"
+            className="absolute right-0 bottom-0 text-4xl sm:text-5xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{

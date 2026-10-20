@@ -39,8 +39,8 @@ export const experiencesData: readonly Experience[] = [
   {
     title: "Quality Engineering Analyst",
     company: "Cognizant · Client: BMO",
-    // Placeholder: replace with your real start date and a summary of your QEA work at BMO.
-    date: "20XX – Present",
+    // Placeholder description: summarize your QEA work at BMO (what you test, tools, impact).
+    date: "2026 – Present",
     description:
       "Quality Engineering & Assurance for BMO as part of Cognizant's QEA practice. Placeholder: describe what you test, the tools you use, and the impact.",
     icon: MdOutlineVerified,
@@ -49,7 +49,7 @@ export const experiencesData: readonly Experience[] = [
     title: "Frontend Developer",
     company: "Chingu",
     location: "Remote",
-    date: "2023 – Present",
+    date: "2023 – 2026",
     description:
       "Led frontend development for cross-functional teams of 6–8 developers using Scrum. Architected auth flows with React Hook Form + Zod, built admin dashboards, integrated Mapbox routing, set coding standards, and reviewed/merged 30+ PRs.",
     icon: FaUsers,
