@@ -37,12 +37,11 @@ export const links = [
 
 export const experiencesData: readonly Experience[] = [
   {
-    title: "Quality Engineering Analyst",
+    title: "Quality Engineer (AI & Test Automation)",
     company: "Cognizant · Client: BMO",
-    // Placeholder description: summarize your QEA work at BMO (what you test, tools, impact).
-    date: "2026 – Present",
+    date: "June 2026 – Present",
     description:
-      "Quality Engineering & Assurance for BMO as part of Cognizant's QEA practice. Placeholder: describe what you test, the tools you use, and the impact.",
+      "Functional, regression, and end-to-end testing of an enterprise workflow web app in a regulated financial-services environment. Write and run test cases in ALM from business requirements and user stories, and triage and track defects to resolution with developers and analysts.",
     icon: MdOutlineVerified,
   },
   {
@@ -150,7 +149,7 @@ export const skillsData = [
   },
   {
     section: "Testing & Quality",
-    skills: ["Playwright", "Vitest", "Jest", "React Testing Library"],
+    skills: ["Playwright", "Vitest", "Jest", "React Testing Library", "ALM", "Jira"],
   },
   {
     section: "3D & Graphics",

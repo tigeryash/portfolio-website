@@ -42,7 +42,7 @@ export default function About() {
         functional product.
       </p>
       <p className="mb-3">
-        Today I&apos;m a <span className="font-medium">Quality Engineering Analyst</span> at{" "}
+        Today I&apos;m a <span className="font-medium">Quality Engineer</span> at{" "}
         <span className="font-medium">Cognizant</span>, working with{" "}
         <span className="font-medium">BMO</span>, which has sharpened how I think about building
         software that is reliable and well tested. I&apos;m a quick learner, always excited by new
